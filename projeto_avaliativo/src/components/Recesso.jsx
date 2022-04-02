@@ -3,14 +3,14 @@ import Card from "./Card"
 
 import { connect } from "react-redux"
 
-function Media(props){
+function Recesso(props){
     const {min, max} = props
     return (
-        <Card title="Média dos Números" green>
+        <Card title="Soma dos Números" purple>
             <div>
                 <span>
                     <span>Resultado: </span>
-                    <span>{(min + max)/2}</span>
+                    <span>{(min + max)}</span>
                 </span>
             </div>
         </Card>
@@ -24,4 +24,4 @@ function mapStateToProps(state) {
     }
 }
 
-export default connect(mapStateToProps)(Media)
+export default connect(mapStateToProps)(Recesso)

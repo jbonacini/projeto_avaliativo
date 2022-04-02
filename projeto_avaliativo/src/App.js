@@ -2,9 +2,10 @@
 import React from 'react';
 import './App.css';
 
-import Desafio from './components/Desafio'
-import Media from './components/Media'
-import Soma from './components/Soma'
+import Desafio from './components/Desafio';
+import Numeros from './components/Numeros'
+import Propriedade from './components/Propriedade'
+import Recesso from './components/Recesso'
 import Sorteio from './components/Sorteio'
 
 function App() {
@@ -14,20 +15,21 @@ function App() {
   return (
     <div className='App'>
       <h1>PROJETO AVALIATIVO REACT-REDUX 1º BIMESTRE</h1>
-      
+
       <div className='linha'>
         {/* <Intervalo min={min} max={max} 
         onMinChanged={setMin} onMaxChanged={setMax}></Intervalo> */}
-        <Intervalo ></Intervalo>
+        <Desafio></Desafio>
       </div>
 
-      <div className='linha'>
-        {/* <Media min={min} max={max}></Media>
-        <Soma min={min} max={max}></Soma>
-        <Sorteio min={min} max={max}></Sorteio> */}
-        <Media></Media>
-        <Soma></Soma>
-        <Sorteio></Sorteio> 
+      <div className='linha'>     
+        <Numeros></Numeros>
+        <Propriedade
+          titulo='QUAL SUA NOTA?'
+          aluno='José Bonacini Neto'
+        ></Propriedade>
+        <Recesso></Recesso>
+        <Sorteio></Sorteio>
       </div>
 
     </div>
