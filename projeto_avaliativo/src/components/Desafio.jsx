@@ -1,6 +1,6 @@
 import "./Desafio.css"
 import React from "react"
-import Card from "./Card" 
+import Card from "./Card"
 
 import { connect } from "react-redux"
 import {alterarNumeroMinimo, alterarNumeroMaximo} from "../store/actions/numeros"
