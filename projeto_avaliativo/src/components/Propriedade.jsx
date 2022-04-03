@@ -1,16 +1,17 @@
 import React from "react"
 import Card from "./Card"
+import App from "../App"
 
 import { connect } from "react-redux"
 
 function Propriedade(props){
-    const {min, max} = props
+    const {min} = props
     return (
-        <Card title="Qual sua Nota" blue>
+        <Card titulo blue>
             <div>
                 <span>
-                    <span>Resultado: </span>
-                    <span>{(min + max)/2}</span>
+                    <span ><Propriedade/></span>
+                    <span>{(min)}</span>
                 </span>
             </div>
         </Card>
@@ -20,7 +21,6 @@ function Propriedade(props){
 function mapStateToProps(state) {
     return {
         min: state.numeros.min,
-        max: state.numeros.max
     }
 }
 
