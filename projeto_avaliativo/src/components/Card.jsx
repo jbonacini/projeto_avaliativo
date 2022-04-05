@@ -2,12 +2,12 @@ import React from 'react'
 import './Card.css'
 
 function getColor(props) {
-    if(props.red) return "Red"
+    if(props.grape) return "Grape"
     if(props.green) return "Green"
     if(props.blue) return "Blue"
-    if(props.purple) return "Purple"
+    if(props.red) return "Red"
     if (props.orange) return "Orange"
-    return " "
+    return ""
 }
 
 export default props => {

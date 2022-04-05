@@ -2,34 +2,37 @@
 import React from 'react';
 import './App.css';
 
-import Desafio from './components/Desafio';
-import Numeros from './components/Numeros'
-import Propriedade from './components/Propriedade'
-import Recesso from './components/Recesso'
+import Desafio from './components/Desafio'
+import Numero from './components/Numero'
+import Propriedades from './components/Propriedades'
 import Sorteio from './components/Sorteio'
+import Recesso from './components/Recesso'
+
 
 function App() {
-  // const [min, setMin] = useState(10)
-  // const [max, setMax] = useState(100)
 
   return (
     <div className='App'>
       <h1>PROJETO AVALIATIVO REACT-REDUX 1º BIMESTRE</h1>
 
       <div className='linha'>
-        {/* <Intervalo min={min} max={max} 
-        onMinChanged={setMin} onMaxChanged={setMax}></Intervalo> */}
-        <Desafio></Desafio>
+        <Desafio ></Desafio>
       </div>
 
-      <div className='linha'>     
-        <Numeros></Numeros>
-        <Propriedade
-          titulo='QUAL SUA NOTA?'
-          aluno='José Bonacini Neto'
-        ></Propriedade>
-        <Recesso></Recesso>
+      <div className='linha'>
+        <Numero></Numero>
+      </div>
+      <div className='linha'>
+        <Propriedades
+          titulo="QUAL SUA NOTA?"
+          aluno="José Bonacini Neto"
+        ></Propriedades>
+      </div>
+      <div className='linha'>
         <Sorteio></Sorteio>
+      </div>
+      <div className='linha'>
+        <Recesso></Recesso>
       </div>
 
     </div>

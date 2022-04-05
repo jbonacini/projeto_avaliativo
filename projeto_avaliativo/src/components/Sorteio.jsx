@@ -1,13 +1,13 @@
 import React from "react"
 import Card from "./Card"
-
 import { connect } from "react-redux"
-
 function Sorteio(props){
-    const {min, max} = props
-    const aleatorio = parseInt(Math.random() * (max-min)) + min
+    const {num} = props
+    const aleatorio = parseInt(Math.random() * num)
+    const texto_sorteio = "Sorteio de Números de 0 à " + num
+    
     return (
-        <Card title="Sorteio de Números de 0 àN" orange>
+        <Card title={`${texto_sorteio}`} red>
             <div>
                 <span>
                     <span>Resultado: </span>
@@ -20,8 +20,7 @@ function Sorteio(props){
 
 function mapStateToProps(state) {
     return {
-        min: state.numeros.min,
-        max: state.numeros.max
+        num: state.numeros.num
     }
 }
 
